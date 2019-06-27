@@ -1,0 +1,92 @@
+@media screen and (max-width: 600px) { /* For mobile: */
+	
+html{
+	background:url(back.jpg);
+	min-height:100%;
+}
+body{
+	margin:0;
+	padding:0;
+	display:flex;
+	flex-direction:column;
+	flex:auto;
+}
+.info{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	width:100%;
+	height:20%;
+}
+
+.menu{
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items:strech;
+}
+.canvas {
+ background:url(tower_background.png);
+}
+.tower {
+ padding: 5px;
+ border: 1px solid;
+}
+.tower p{
+	color:black;
+	font-family: 'Roboto Slab', serif;
+}
+ h3{
+	color:green;
+	font-family: 'Roboto Slab', serif;
+}
+
+}
+
+@media only screen and (orientation: landscape) {
+ html{
+	background:url(back.jpg);
+	min-height:100%;
+}
+body{
+	margin:0;
+	padding:0;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+}
+.info{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	width:100%;
+	height:20%;
+}
+.canvasMenu{
+	display:flex;
+	flex-direction: row;
+}
+.menu{
+	display:flex;
+	flex:0.5;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items:strech;
+}
+.canvas {
+ background:url(tower_background.png);
+}
+.tower {
+ padding: 5px;
+ border: 1px solid;
+}
+.tower p{
+	color:black;
+	font-family: 'Roboto Slab', serif;
+}
+ h3{
+	color:green;
+	font-family: 'Roboto Slab', serif;
+}
+
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Donbass Defence</title>
+<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1">
+   <link href="mainstyle.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+</head>
+
+<body>
+
+<div class ='info' style='width:600px;'>
+<h3 style='color:red;'>Пройли кордон: <span id='attackersScore'>0</span></h3>
+<h3>Знищені: <span id='stopped'>0</span></h3>
+<h3><span class='right'>Резерв сил: <span id='money'>250</span></span></h3>
+</div>
+
+<div class="canvasMenu">
+
+
+<canvas id='canvas' class='canvas' width='600' height='600' style='border:1px solid #000;'>Looks like HTML% canvas is turned off. Sorry, this tower defense game needs canvas to work</canvas> 
+
+
+
+<div class='menu'>
+<div class='tower' style='background-color: blue;' onclick='changeTower(0);'>
+<p>Солдат<br>Дальнобійність: Середня<br>Пошкодження: Середні<br>Швидкість: Середня<br>Ціна: 50</p>
+</div>
+
+
+<div class='tower' style='background-color: yellow;' onclick='changeTower(1);'>
+<p >Снайпер<br>Дальнобійність: Дальня<br>Пошкодження: Середні<br>Швидкість: Висока<br>Ціна: 75</p>
+</div>
+
+<br>
+<div class='tower' style='background-color:red;' onclick='changeTower(2);'>
+<p>Гранатометник<br>Дальнобійність: Мала<br>Пошкодження: Високі<br>Швидкість: Середня<br>Ціна: 250</p>
+</div>
+
+<div class='tower' style='background-color:black;' onclick='changeTower(3);'>
+<p style='color:red;'>Кулеметник<br>Дальнобійність: Мала<br>Пошкодження: Високі<br>Швидкість: Середня<br>Ціна: 350</p>
+</div>
+
+</div>
+</div>
+
+
+<script type='text/javascript' src='mainLoop.js'></script>
+<script type='text/javascript' src='attackerUnits.js'></script>
+<script type='text/javascript' src='towerUnits.js'></script>
+<script type='text/javascript' src='bullets.js'></script>
+<script type='text/javascript' src='mouseClick.js'></script>
+<script> alert('Ваше завдання знищити, 454 ворогів,\nДозволяється пропустити до 15');</script>
+
+</body>
+
+</html>
